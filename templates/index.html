@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replit</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css"/>
+    <script src="https://kit.fontawesome.com/da676574b9.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="topnav">
+    <h1 id=MTITLE>"QUOTES"</h1>
+    <a class="ab" id="plusButton" href="#">
+    <i id=addB class="fa-solid fa-square-plus"></i>
+    </a>
+    <a class="db" id="deleteButton" onclick="deleteQuote();">
+    <i class="fa-solid fa-square-minus"></i>
+    </a>
+      <a class="rb" id="randomButton" onclick ="displayRandom();">
+        <i class="fa-solid fa-arrows-spin"></i>
+      </a>
+  </div>
+
+    <div class="Qlist">
+      <Select id="quotes">
+      </Select>
+      <button onclick="putQuote();" id="selbtn" class="button">Select</button>
+    </div>
+
+   <div class="pwindow">
+    <div class="popup-content">
+      <input type="text" id="qBox" Class="Qbox" placeholder="Add Quote.... ">
+      <input type="text" id="aBox" Class="Abox" placeholder="Add Author.... ">
+      <input type="button" Class="Abutton"  onclick="addQuote();" value="ADD!">
+      <a class="exitButton" id="buttonExit" href="#">EXIT</a>
+      
+    </div>
+  </div>
+
+   
+  <div class="myDisplay">
+    <p id="Qholder">"This Is where all my quotes are going to be displayed"</p>
+  </div>
+<<!-- Write your comments here -->
+  <div class="confirmWindow">
+    <div class="confirm-content">
+      <div class="sentence">
+    <p>Do you want to save these changes?</p>
+  </div>
+      <div class="yesButton">
+    <button id="yButton" onclick="yesButton();">
+      YES
+    </button>
+  </div>
+  <div class="noButton">
+    <button id="nButton" onclick="noButton();"> 
+      NO
+    </button>
+    </div>
+  </div>
+  </div>
+    <script src="/static/js/scripts.js" type="text/javascript"></script>
+  </body>
+
+
+
+
+
+  
+</html>

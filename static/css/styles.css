@@ -1,0 +1,246 @@
+body{
+    margin:0;
+}
+html {
+   min-height: 100%;
+   background-image: url("pexels-bri-schneiter-346529.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+
+
+.topnav{
+  overflow:hidden;
+  background-color: #000000;
+  opacity:100%;
+  padding: 2px;
+  text-align: left;
+  color: white;
+  position: relative;
+  line-height: 25px;
+}
+#MTITLE{
+  float left;
+  font-family: FANTASY, Sans-serif;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.topnav .ab{
+  float: right;
+  background-color: black;
+  color: grey;
+  font-size: 40px;
+  display: inline-block;
+  position:relative;
+  cursor:pointer;
+  right: 0;
+  transition: background 0.2s;
+}
+
+.ab:hover{
+  color: blue;
+}
+
+ #quotes{
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 3px;
+  width:700px;
+  color: white;
+  cursor:pointer;
+  background-color: #424242
+}
+
+/* Popup window////////////////////////////////////////////////////////*/ 
+.pwindow{
+  background-color: rgba(0,0,0, 0.6);
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:999;
+  top:0;
+  display:none;
+  justify-content:center;
+  align-item:center;
+  text-align:center;
+}
+.popup-content{
+  height:250px;
+  width:500px;
+  background: #fff5f5;
+  padding:20px;
+  border-radius: 5px;
+  z-index: 999;
+  position:relative;
+}
+
+input{
+  margin: 20px auto;
+  display: block;
+  width: 70%;
+  padding: 8px;
+  border: 2px solid #908e8e;
+  background-color: white;
+}
+
+
+/*The Add button Section//////////////////////////////////*/
+input.Abutton{
+   border: 2px solid #000000;
+   width: 30%;
+   background-color: #a8a8a8;
+  border-radius: 12px;
+}
+
+input.Abutton:hover{
+  background-color:cadetblue;
+  color:#ffffff;
+  cursor:pointer;
+}
+
+/*DELTE BUTTON SECTION///////////////////////////////////////*/
+.topnav .db{
+  float: right;
+  background-color: black;
+  color: grey;
+  font-size: 40px;
+  display: inline-block;
+  position:relative;
+  cursor:pointer;
+  right 0;
+}
+
+.db:hover{
+  color: #d10000;
+}
+/*RANDOM Window SECTION///////////////////////////////////////*/
+.topnav .rb{
+  float: right;
+  background-color: black;
+  color: grey;
+  font-size: 40px;
+  display: inline-block;
+  position:relative;
+  cursor:pointer;
+  right:0;
+}
+
+.rb:hover{
+  color: #7306f9;
+}
+/*Quote Displaying section/////////////////////////////////////////*/
+.myDisplay{
+  background-color: black;
+  padding: 30px;
+  margin: auto;
+  width:650px;
+
+  
+}
+.myDisplay p{
+  max-width: 30em;
+  color: white;
+  text-align:center;
+  margin: 40px auto;
+  
+}
+/*SELECT Button/////////////////////////////////////////*/
+.button{
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: FANTASY
+}
+.button:hover {background-color: #3e8e41}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*Confirm modal//////////////////////*/
+.confirmWindow{
+  background-color: rgba(0,0,0, 0.6);
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:999;
+  top:0;
+  display:none;
+  justify-content:center;
+  align-item:center;
+  text-align:center;
+}
+
+.confirm-content{
+  height:100px;
+  width:400px;
+  background: #ffffff;
+  padding:20px;
+  border-radius: 5px;
+  z-index: 999;
+  position:relative;
+  padding: 15px 25px;
+  box-shadow: 0 9px #999;
+  opacity:1;
+}
+
+/*Confirm buttons//////////////////////*/
+#yButton{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float: left;
+}
+
+
+#yButton:hover {background-color: #3e8e41}
+
+#yButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#nButton{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #fb0404;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float: right;
+}
+
+
+#nButton:hover {background-color: #b81414}
+
+#nButton:active {
+  background-color: #b81414;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
